@@ -62,15 +62,40 @@ helm repo list
 
 ## Searching the Repo
 
+Search the repo for Drupal charts:
+
 ```
 helm search repo drupal
 ```
 
+The search command matches on a variety of fields like package name, labels and descriptions. Try some searches to see this in action:
+
+```
+helm search repo "open source"
+```
+Search for the term database:
+```
+helm search repo database
+```
+
+We can also see which versions exist for a chart:
+```
+helm search repo drupal --versions
+```
+Pipe the output to the `head` command to limit the list to the first 10:
+```
+helm search repo drupal --versions | head -10
+```
+
+## Versions
+
+A *chart version* is the version of the Helm chart. The *app version* is the version of the application packaged in the chart. Helm uses the chart version to make versioning decisions, such as which package is newest. As we can see in the preceding example, multiple chart versions may contain the same app version.<sup>1</sup>
+
 ## What's Next?
 
-Back to [Helm overview](../README.md) or forward to [Installing charts](../installing-charts/README.md).
+Back to [Helm overview](../README.md) or forward to [Working with Charts](../installing-charts/README.md).
 
 
-## End Notes
+## Footnotes
 
 1. [Learning Helm](https://www.oreilly.com/library/view/learning-helm/9781492083641/) by Matt Butcher, Matt Farina, Josh Dolitsky &copy; 2021 O'Reilly Media, Inc.

@@ -1,0 +1,5 @@
+drupalUsername: jeff
+drupalPassword: T0pS3cr3t
+drupalEmail: janderson141@cscc.edu
+image:
+  tag: drupal:9.3.8-debian-10-r3
