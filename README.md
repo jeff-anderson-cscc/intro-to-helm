@@ -51,16 +51,10 @@ Helm was created in 2015 at Deis, which was later acquired by Microsoft. What is
 * Tools like Helmfile, Flux, and Reckoner have filled in details in the larger configuration management story.
 * Kubernetes supports two main formats for declaring the resources you want: JSON and YAML.<sup>3</sup>
 
-## Installing Helm
 
-The quick and easy way:
+## What's Next?
 
-```
-curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-```
-
-For alternatives and details, see [Installing Helm](https://helm.sh/docs/intro/install/) in the Helm documentation.
-
+[Getting Started](./getting-started/README.md) with Helm.
 
 
 ## End Notes
